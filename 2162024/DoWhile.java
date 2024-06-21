@@ -16,11 +16,7 @@ public class DoWhile{
 	break;
 	int result = number1 + number2;
 
-	System.out.println("result "+ result);
-	
-	input.nextLine();
-
-	
+	System.out.println("result "+ result);	
 	
 		
 	}while ( true);
