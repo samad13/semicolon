@@ -7,7 +7,7 @@ public class Christmas{
 	
 		for( int day = 1; day <= 12; day++){
 	
-	System.out.print("on the day ");
+	System.out.print("on the ");
 		
 		switch(day){
 			case 1:
