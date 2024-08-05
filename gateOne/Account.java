@@ -58,7 +58,7 @@ public void setFirstName(String firstName) {
 
 	public void withdraw(double withdrawAmount) {
         if (withdrawAmount > balance) {
-            System.out.println("wsithdrawal amount exceeded account balance.");
+            System.out.println("withdrawal amount exceeded account balance.");
         } else {
             balance -= withdrawAmount;
         }}
@@ -74,8 +74,12 @@ public void setFirstName(String firstName) {
 	public void transfer(double transferAmount,String accountNumber ) {
 	    if ( transferAmount <= 0.0 ) {
             System.out.println("deposit amount is not valid, input a valid deposit");
+        }  else if (transferAmount > this.balance) {
+            System.out.println("transfer amount is more than account balance.");
         } else {
             balance -=  transferAmount;
+	  System.out.println("transfer successful. balance: " + balance);
+
         }
     }
 
@@ -83,7 +87,7 @@ public void setFirstName(String firstName) {
 
 
 
-
+ 
 
 
 
