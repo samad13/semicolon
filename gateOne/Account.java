@@ -39,7 +39,7 @@ public void setFirstName(String firstName) {
 	} 
 
 	public String getPin() { 
-	 return "****"; 
+	 return pin; 
 	}
  
 	public void setAccountNumber(String accountNumber) { 
@@ -60,7 +60,10 @@ public void setFirstName(String firstName) {
         if (withdrawAmount > balance) {
             System.out.println("withdrawal amount exceeded account balance.");
         } else {
+		System.out.print("you withdraw: " +  withdrawAmount);
             balance -= withdrawAmount;
+	        System.out.println("   your blance is : " +   balance);
+
         }}
 
 	public void deposit(double depositAmount) {
@@ -71,21 +74,17 @@ public void setFirstName(String firstName) {
         }
     }
 
-	public void transfer(double transferAmount,String accountNumber ) {
+	public void transfer(double transferAmount ) {
 	    if ( transferAmount <= 0.0 ) {
             System.out.println("deposit amount is not valid, input a valid deposit");
         }  else if (transferAmount > this.balance) {
             System.out.println("transfer amount is more than account balance.");
         } else {
-            balance -=  transferAmount;
-	  System.out.println("transfer successful. balance: " + balance);
+            balance -=  transferAmount; 
+	  System.out.println("succesfull transfer your balance is: " + balance);
 
         }
     }
-
-
-
-
 
  
 
