@@ -77,6 +77,7 @@ public void setFirstName(String firstName) {
         }
     }
 
+
 	public void transfer(double transferAmount, String getAccountNumber ) {
 	    if ( transferAmount <= 0.0 ) {
             System.out.println("deposit amount is not valid, input a valid deposit");
@@ -84,13 +85,18 @@ public void setFirstName(String firstName) {
             System.out.println("you can thief oooo, you get that kind money for your accouunt.");
         } else {
             balance -=  transferAmount; 
-	  System.out.println("succesfull transfer to "+ getAccountNumber +" your balance is: " + balance);
+	  System.out.println("succesfull transfer to " + transferAmount +" "+ getAccountNumber +" your balance is: " + balance);
 
         }
     }
 
- //collecting it innside arrayList, then use that to send to each every input object then save innside the array, then use a forloop when you want to send money to //another account,,,, 
 
+	public void receieveTransfer(double transferAmount ) {	
+      	balance +=transferAmount;
+	
+
+};	
+ 
 
 
 }
