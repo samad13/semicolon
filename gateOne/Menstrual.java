@@ -9,16 +9,13 @@ public class Menstrual{
 
 		
 		Calendar calender = Calendar.getInstance(); 
-		//Calendar calender2 = Calendar.getInstance();
+		Calendar calender2 = Calendar.getInstance();
 		System.out.println("welcome to menstral app\n");
 
 		
 		System.out.println("First Day of Your Last Period: ");
 		int day = input.nextInt();
 		calender.set(Calendar.DATE, day);
-
-		//System.out.println("enter month: ");
-		//int daytime = Calendar.DATE -4;
 
 		System.out.println("enter month: ");
 	  	int month = input.nextInt();
@@ -35,33 +32,48 @@ public class Menstrual{
 		System.out.println("How long did it last? : ");
 		int flowdays = input.nextInt();
 		flowdays -=1;
-		calender.add(Calendar.DATE, flowdays ); 
-
-		Date dateOne = calender.getTime(); 
-		
-
-		System.out.println("Period  ends: "
-						+ dateOne); 
+				
 		System.out.println("Average Length of Circles: ");
 		int circle = input.nextInt();
 					 
 		calender.add(Calendar.DATE, circle ); 
-		dateOne = calender.getTime();
+		Date dateOne = calender.getTime();
 	
-
 
 		calender.add(Calendar.DATE, flowdays ); 
 		Date datetwo = calender.getTime();
 
-		calender.add(Calendar.DATE, -14 ); 
+		calender.add(Calendar.DATE, -20 ); 
 		Date ovulation = calender.getTime();
+		calender.add(Calendar.DATE, 4 ); 
+		Date ovulation2 = calender.getTime();
 		
 		
-		//calculate from the beggining of the first day of array
-		System.out.println("your next period is"	+ " between: " + dateOne+ " To " +datetwo);
-		
-		System.out.println("your next ovulaton is"	+ " between: " + ovulation);
 
+		System.out.println("your next PERIOD is"	+ " between: " + dateOne+ " To " +datetwo);
+		
+		System.out.println("your next OVULATION is probably between: "+ ovulation	+ " and "+ ovulation2 );
+		
+		
+		calender2.set(Calendar.DATE, day);
+
+		calender2.set(Calendar.MONTH, month); 
+
+		calender2.set(Calendar.YEAR, year); 
+
+		flowdays+=1;
+		calender2.add(Calendar.DATE, flowdays);
+		Date safePeriods1 = calender2.getTime();
+		calender.add(Calendar.DATE, -5);
+		Date safePeriods2 = calender.getTime();
+		calender.add(Calendar.DATE, 6);
+		Date safePeriods3 = calender.getTime();
+		calender.add(Calendar.DATE, 10);
+		Date safePeriods4 = calender.getTime();
+
+
+		System.out.println("your FREE DAYS is probably between: "+ safePeriods1  	+ " and " +  safePeriods2 +"\nthen between: "+ safePeriods3  	+ " and " +  safePeriods4 );
+		
 
 		}
 		else {

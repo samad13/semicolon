@@ -85,7 +85,7 @@ public void setFirstName(String firstName) {
             System.out.println("you can thief oooo, you get that kind money for your accouunt.");
         } else {
             balance -=  transferAmount; 
-	  System.out.println("succesfull transfer to " + transferAmount +" "+ getAccountNumber +" your balance is: " + balance);
+	  System.out.println("succesfull transfer " + transferAmount +" to "+ getAccountNumber +" your balance is: " + balance);
 
         }
     }
