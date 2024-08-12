@@ -117,8 +117,8 @@ public class Atm {
 			currentAccount.transfer(transferAmount, depositAccountNumber);
 			
 			 account.receieveTransfer(transferAmount);
-											
-				}System.out.print("\nAccount number is wrong! \n");
+				break;							
+				}else {System.out.print("\nAccount number is wrong! \n");}
 
 		}	
                         
@@ -161,7 +161,9 @@ public class Atm {
             option 2: add a new customer details:
             option 3: search a particular customer details:
             option 4: close a particular customer details:
-	    option 1: view all customers details:
+            option 0: EXIT THE SYSTEM:
+
+           
 
         """;
 		int  staff = 20;
@@ -199,7 +201,7 @@ public class Atm {
 				
 			break;
 			case 4:
-			System.out.println(" search by account number you want to delete: ");
+			System.out.println(" search by account number you want to close: ");
 			String  deleteAccount = input.next();
 			Account DELETE =null;
 			for (Account account : account1) {
