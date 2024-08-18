@@ -22,6 +22,7 @@ public class  Delivery{
 			return amountperPercel;
 
 	}
+//To https://github.com/samad13/semicolon.git
 
 
 	

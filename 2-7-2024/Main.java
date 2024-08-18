@@ -5,7 +5,17 @@ public class Main{
 	
 	Scanner input = new Scanner(System.in);
 
-	System.out.print("Enter number for fucntion to check: ");
+	
+		String options = """
+			Enter number for fucntion to check
+1.
+
+
+
+						"""
+
+		System.out.println(options);
+
 		int pick = input.nextInt();
 
 		switch(pick){
@@ -28,19 +38,27 @@ public class Main{
 		System.out.println(Kata.positiveDifferece(number1, number2));
 		break;
 	
-		case 4:
+		/**case 4:
 		System.out.println("Enter 2 number that divide each other and return qoutient decimal 2  : ");
 		number1 = input.nextInt();
 	        number2 = input.nextInt();
 		//System.out.printf("%.2f",  answer);
 		System.out.println(Kata.qoutientDivide(number1, number2));
-		break;
+		break;**/
 	
 		case 5 :
 		System.out.println("put  NUMBER: ");
 		number = input.nextInt();
 		System.out.println(Kata.factor(number));
 		break;
+
+
+		case 6 :
+		System.out.println("put  NUMBER to check square: ");
+		number = input.nextInt();
+		System.out.println(Kata.square(number));
+		break;
+
 
 		case 7:
 		System.out.print("input  5 digit integer: ");

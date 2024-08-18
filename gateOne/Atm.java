@@ -6,8 +6,7 @@ public class Atm {
         Scanner input = new Scanner(System.in);
 
        
-	ArrayList<Account> account1 = new ArrayList<>();
-		
+	
 
 
       
@@ -26,8 +25,9 @@ public class Atm {
 	  System.out.println("enter your 4 digit pin: ");
 	  String pin = input.nextLine();
 
-	
-	 account1.add(new Account(firstName,lastName, accountNumber,balance,  pin));
+	ArrayList<Account> account1 = new ArrayList<>();
+	var adding = new Account(firstName,lastName, accountNumber,balance,  pin);
+	 account1.add( adding);
 
 
 		
@@ -73,6 +73,7 @@ public class Atm {
             System.out.println("4. Transfer");
             System.out.println("5. Change pin");
 	    System.out.println("8.close account ");
+	    System.out.println("100. open aother account ");
 
 	     System.out.println("0. Exit");
 

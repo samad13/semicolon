@@ -15,15 +15,6 @@ public class Even{
 
 
 
-public static void main(String[] args) {
-            
-        int[] array = {1,2,3,4,5,6,7,8,9};
-        
-        Even even = new Even();
-        
-        System.out.println("the even index is: " + even.element(array));
-        
-    }
 }
 
 

@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class Kata{
 	
 	public static boolean isEvenBoolean(int number){
@@ -29,18 +28,19 @@ public class Kata{
 		
 
 	}
-	//4
-	public static float qoutientDivide(int number1, int number2){
-		 if(number2 == 0) {
-		return 0;
-		}float answer = (float) (number1 / number2);
+	
+
+	/**public static float qoutientDivide(int number1, int number2){
+		
+		if(number2 == 0) {
+		return answer;
+		}else {float answer = (float) (number1 / number2);}
 		
 		return answer;			
 
-	}
+	}**/
 
-	//5
-	;
+
     public static int factor(int number){
 	int factor = 0;
         for (int count = 1; count <= number; count ++) {
@@ -51,10 +51,16 @@ public class Kata{
 	return factor;
 }
 
-	//7
+
+	public static boolean square(int number){
+	for(int i = 1; i < number; i++)
+		if(number / i == i) return true; 
+		return false;
+	}
+	
+
 	public static boolean palindrome(int number){
 
-	
 	int value1 = number / 1000;
 	int value2 = value1 / 10;
 	int value3 = value1 % 10;
